@@ -1,0 +1,218 @@
+/* RESUME PAGE SETUP */
+div#resumeDocument{
+    display: grid;
+    font-family: Arial;
+    padding: 1in;
+    font-size: 14pt;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* MAIN PAGE HEADING */
+div.heading{
+    border-width: 5px;
+    background-color: bisque;
+    border-style: double;
+    border-color: #249c9e;
+    margin-bottom: 10px;
+}
+
+div.heading>header>h1#mainTitle{
+    color: #249c9e;
+    text-align: center;
+}
+
+div.heading>header>h3#subTitle{
+    color: #249c9e;
+    text-align: center;
+}
+
+/* NAV BAR */
+div.navBar{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+div.navBar>a>div{
+    border-style: solid;
+    list-style-type: none;
+    background-color: #f2f2f2;
+    padding: 2px;
+}
+
+div.navBar>a{
+    color: #249c9e;
+    text-decoration: none;
+}
+
+div.navBar>a>div#currentPage{
+    color: #FD5901;
+    background-color: #b2f2f2f2;
+}
+
+/* MAIN PAGE CONTENT */
+
+div.homepageContent{
+    flex: 1 auto;
+    width: fit-content;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+div.homepageContent>details{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #008083;
+    padding: 20px;
+}
+
+div.homepageContent>details>summary{
+    color: #FD5901
+}
+
+div.homepageContent>details>h2{
+    color: #249c9e
+}
+
+div.homepageContent>details>p{
+    color: #249c9e
+}
+
+div.homepageContent>details>ul>li{
+    color: #249c9e
+}
+
+/* NAV BAR-CONTENT INTERACTION */
+div#body{
+    display: flex;
+}
+
+/* DOCUMENT TITLE */
+div#heading>div#title>h1{
+    text-align: center;
+    font-size: 28pt;
+}
+
+div#heading>div#title>h4{
+    text-align: center;
+}
+
+/* CONTACT BLOCK */
+div#heading>div#contactBlock>p{
+    text-align: right;
+}
+
+/* EDUCATION AND WORK EXPERIENCE*/
+div.thridLevelSubheading>p#date{
+    text-align: right;
+    flex: auto;
+}
+
+div.thridLevelSubheading{
+    border-bottom: solid 2px;
+    display: flex;
+}
+
+div#projects>ul>li{     /* projects list in resume */
+    padding-top: 10px;
+}
+
+/* PORTFOLIO DIRECTORY AND PROJECTS*/
+div#directory{
+    display: grid;
+    width: 100%;
+}
+
+div#directory>a{
+    text-decoration: none;
+}
+
+div.project{
+    display: grid;
+    border-style: solid;
+    border-color: #249c9e;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    box-shadow: 7px 7px rgba(0, 95, 96, 0.3);
+    
+}
+
+div.project>div{
+    display: flex;
+    border-style: solid;
+    border-color: #249c9e;
+    border-width: 2px;
+    border-width: 10%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+div.project>div.projectCard{
+    border-style: none;
+}
+
+div.project>div>img{
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #FD5901;
+}
+
+div.project>div>img#capstoneDirectoryImage{
+    height: 200px;
+    width: 200px;
+}
+
+div.project>div>img#monopolyDirectoryImage{
+    height: 120px;
+    width: 200px;
+}
+
+div.project>div>img#storeDirectoryImage{
+    height: 126px;
+    width: 200px;
+}
+
+div.project>div>img#greenRoofsDirectoryImage{
+    height: 123px;
+    width: 200px;
+}
+
+div.project>div>div{
+    margin-left: 10px;
+}
+
+div.project>div>div>h2{
+    color: #FD5901;
+}
+
+div.project>div>div>h3{
+    color: #249c9e
+}
+
+div.project>div>div>p{
+    color: #249c9e;
+}
+
+div.project>div>div>ul>li{
+    color: #FD5901;
+}
+
+div.project>div>div>img{
+    height: 100px;
+    width: 200px;
+}
+
+div.subject>div.details>img#ubuntu_logo{
+    width: 50%;
+    height: auto;
+}
+
+div.subject>div.details>img#roboflow_logo{
+    width: 50%;
+    height: auto;
+}
