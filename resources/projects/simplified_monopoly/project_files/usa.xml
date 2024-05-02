@@ -1,0 +1,170 @@
+<Board>
+    <Go>
+        <Reward>200</Reward>
+    </Go>
+    <Property>
+        <PropertyName>Mediterranean Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>60</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Baltic Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>60</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>Reading Railroad</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>Oriental Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>100</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Vermont Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>100</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Connecticut Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>120</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Jail></Jail>
+    <Property>
+        <PropertyName>St. Charles Place</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>140</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Utility>
+        <UtilityName>Electric Company</UtilityName>
+        <UtilityPrice>150</UtilityPrice>
+        <UtilityOwned>false</UtilityOwned>
+    </Utility>
+    <Property>
+        <PropertyName>States Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>140</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Virginia Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>160</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>Pennsylvania Railroad</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>St. James Place</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>180</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Tennessee Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>180</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>New York Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>200</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Parking></Parking>
+    <Property>
+        <PropertyName>Kentucky Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>220</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Indiana Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>220</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Illinois Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>240</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>B. &amp; O. Railroad</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>Atlantic Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>260</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Ventnor Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>260</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Utility>
+        <UtilityName>Water Works</UtilityName>
+        <UtilityPrice>150</UtilityPrice>
+        <UtilityOwned>false</UtilityOwned>
+    </Utility>
+    <Property>
+        <PropertyName>Marvin Gardens</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>280</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <SendJail></SendJail>
+    <Property>
+        <PropertyName>Pacific Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>300</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>North Carolina Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>300</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Pennsylvania Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>320</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>Shortline Railroad</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>Park Place</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>350</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Boardwalk</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>400</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+</Board>

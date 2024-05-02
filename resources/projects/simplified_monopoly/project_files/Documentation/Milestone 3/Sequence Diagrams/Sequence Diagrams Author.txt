@@ -1,0 +1,2 @@
+These sequence diagrams were authored by Jeremy Trendoff - 101160306. 
+The violet tool did cause some messiness in the Purchase Property sequence diagram. I apologize for this inconvience. 

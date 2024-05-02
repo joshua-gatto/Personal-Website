@@ -1,0 +1,104 @@
+<board>
+	<go>
+		[reward]
+	</go>
+2x
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<Railroad>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+	</Railroad>
+3x
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<Jail></Jail>
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<Utility>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+	</Utility>
+2x
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<Railroad>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+	</Railroad>
+3x
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<freeParking></freeParking>
+3x
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<Railroad>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+	</Railroad>
+2x
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<Utility>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+	</Utility>
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<SendJail></SendJail>
+3x
+	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>
+	<Railroad>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+	</Railroad>
+2x	<Property>
+		<name>[name]</name>
+		<owned>[owned]</owned>
+		<price>[price]</price>
+		<housePrice>[house price]</housePirce>
+	</Property>

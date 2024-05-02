@@ -1,0 +1,170 @@
+<Board>
+    <Go>
+        <Reward>200</Reward>
+    </Go>
+    <Property>
+        <PropertyName>Old Kent Road</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>60</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Whitechapel Road</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>60</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>King's Cross station</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>The Angel, Islington</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>100</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Euston Road</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>100</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Pentonville Road</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>120</PropertyPrice>
+        <HousePrice>50</HousePrice>
+    </Property>
+    <Jail></Jail>
+    <Property>
+        <PropertyName>Pall Mall</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>140</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Utility>
+        <UtilityName>Electric Company</UtilityName>
+        <UtilityPrice>150</UtilityPrice>
+        <UtilityOwned>false</UtilityOwned>
+    </Utility>
+    <Property>
+        <PropertyName>Whitehall</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>140</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Northumberland Avenue</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>160</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>Marylebone station</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>Bow Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>180</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Great Marlborough Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>180</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Vine Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>200</PropertyPrice>
+        <HousePrice>100</HousePrice>
+    </Property>
+    <Parking></Parking>
+    <Property>
+        <PropertyName>Strand</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>220</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Fleet Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>220</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Trafalgar Square</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>240</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>Fenchurch Street station</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>Leicester Square</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>260</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Coventry Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>260</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <Utility>
+        <UtilityName>Water Works</UtilityName>
+        <UtilityPrice>150</UtilityPrice>
+        <UtilityOwned>false</UtilityOwned>
+    </Utility>
+    <Property>
+        <PropertyName>Piccadilly</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>280</PropertyPrice>
+        <HousePrice>150</HousePrice>
+    </Property>
+    <SendJail></SendJail>
+    <Property>
+        <PropertyName>Regent Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>300</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Oxford Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>300</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Bond Street</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>320</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Railroad>
+        <RailroadName>Liverpool Street station</RailroadName>
+        <RailroadPrice>200</RailroadPrice>
+        <RailroadOwned>false</RailroadOwned>
+    </Railroad>
+    <Property>
+        <PropertyName>Park Lane</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>350</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+    <Property>
+        <PropertyName>Mayfair</PropertyName>
+        <PropertyOwned>false</PropertyOwned>
+        <PropertyPrice>400</PropertyPrice>
+        <HousePrice>200</HousePrice>
+    </Property>
+</Board>
