@@ -7,6 +7,15 @@
         <link rel="stylesheet" href="../assets/style.css">
     </head>
     <body>
+        <script src="../assets/injectHTMLBlock.js"></script>
+        <div id=navBarContainer>
+            <script>
+                window.addEventListener('DOMContentLoaded', function() {
+                    // TODO: remove/replace http://localhost:8080 when deploying
+                    loadHTMLBlock('http://localhost:8000/resources/navbar.html', insertHTMLBlock);
+                });
+            </script>
+        </div>
         <div class="heading">
             <header>
                 <h1 id="mainTitle">
@@ -18,7 +27,6 @@
             </header>
         </div>
         <div id="body">
-            <?php echo 'hello' ?>
             <div class="homepageContent">
                 <details open>
                     <summary>Update - 04/03/23</summary>
