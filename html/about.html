@@ -7,24 +7,23 @@
         <link rel="stylesheet" href="../assets/style.css">
     </head>
     <body>
-        <script src="../assets/injectHTMLBlock.js"></script>
         <div id=navBarContainer>
+            <script src="../assets/injectHTMLBlock.js"></script>
+            <script src="../assets/selectCurrentPage.js"></script>
+            <script src="../assets/injectFormattedElement.js"></script>
             <script>
-                window.addEventListener('DOMContentLoaded', function() {
-                    // TODO: remove/replace http://localhost:8080 when deploying
-                    loadHTMLBlock('http://localhost:8000/resources/html/navbar.html', insertHTMLBlock);
-                });
+                injectElement("navbar", selectCurrentPage);
             </script>
         </div>
         <div id="body">
-            <div class="navBar">
+<!--             <div class="navBar">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li id="currentPage"><a href="about.html">About</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div>
             <h1>About Me</h1>

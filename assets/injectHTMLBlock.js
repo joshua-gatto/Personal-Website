@@ -1,20 +1,25 @@
-function loadHTMLBlock(url, callback, targetId) {
+function loadHTMLBlock(url, callback, preprocessCallback, targetId) {
     // Async. fetches HTML file
     var xhr = new XMLHttpRequest();
     // initialize request
     xhr.open('GET', url, true);
     // event listener
     xhr.onreadystatechange = function() {
+        //preprocessing html block
+        var html = xhr.responseText;
+        if(preprocessCallback){
+            html = preprocessCallback(html);
+        }
         // verifying event
         if(xhr.readyState == 4 && xhr.status == 200) {
-            callback(xhr.responseText, targetId);
+            callback(html, targetId);
         }
     };
     // send the request
     xhr.send();
 }
 
-function insertHTMLBlock(html, targetId) {
+function injectHTMLBlock(html, targetId) {
     // if target is specified
     if(targetId == null) {
         // get script tags
