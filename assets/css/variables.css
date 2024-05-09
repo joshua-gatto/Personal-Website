@@ -1,0 +1,14 @@
+/* Variables and Constants */
+:root{
+	--primary-colour-value: 5, 44, 224;
+	--secondary-colour-value: 7, 47, 175;
+	--tertiary-colour-value: 87, 128, 183;
+	--success-colour-value: 74, 126, 216;
+	--surface-colour-value: 7, 11, 36;
+
+	--primary-colour: rgb(var(--primary-colour-value));
+	--secondary-colour: rgb(var(--secondary-colour-value));
+	--tertiary-colour: rgb(var(--tertiary-colour-value));
+	--success-colour: rgb(var(--success-colour-value));
+	--surface-colour: rgb(var(--surface-colour-value));
+}

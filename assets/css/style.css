@@ -1,3 +1,11 @@
+/* VARIABLES AND CONSTANTS */
+@import 'variables.css';
+
+/* BODY */
+body{
+    margin: 0px;
+}
+
 /* RESUME PAGE SETUP */
 div#resumeDocument{
     display: grid;
@@ -10,46 +18,57 @@ div#resumeDocument{
 
 /* MAIN PAGE HEADING */
 div.heading{
-    border-width: 5px;
-    background-color: bisque;
-    border-style: double;
-    border-color: #249c9e;
+    background-color: var(--surface-colour); /* replace with some image */
+    height: 90vh;
     margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 div.heading>header>h1#mainTitle{
-    color: #249c9e;
+    color: var(--secondary-colour);
     text-align: center;
 }
 
 div.heading>header>h3#subTitle{
-    color: #249c9e;
+    color: var(--secondary-colour);
     text-align: center;
 }
 
 /* NAV BAR */
 div.navBar{
-    width: fit-content;
-    height: fit-content;
-    margin-right: 5px;
-    padding: 5px;
-}
-
-div.navBar>a>div{
-    border-style: solid;
-    list-style-type: none;
-    background-color: #f2f2f2;
-    padding: 2px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-origin: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 div.navBar>a{
-    color: #249c9e;
     text-decoration: none;
+    width: 13%;
+}
+
+div.navBar>a>div{
+    background-color: rgba(25, 25, 25, 0.9);
+    color: rgba(256, 256, 255, 1.0);
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 div.navBar>a>div#currentPage{
-    color: #FD5901;
-    background-color: #b2f2f2f2;
+    color: rgba(255, 255, 255, 1.0);
+    background-color: rgba(16, 37, 230, 0.9);
+}
+
+div.navBar>a>div>p{
+    text-align: center;
 }
 
 /* MAIN PAGE CONTENT */
@@ -59,29 +78,6 @@ div.homepageContent{
     width: fit-content;
     margin-left: 5px;
     padding: 5px;
-}
-
-div.homepageContent>details{
-    border-style: solid;
-    border-width: 2px;
-    border-color: #008083;
-    padding: 20px;
-}
-
-div.homepageContent>details>summary{
-    color: #FD5901
-}
-
-div.homepageContent>details>h2{
-    color: #249c9e
-}
-
-div.homepageContent>details>p{
-    color: #249c9e
-}
-
-div.homepageContent>details>ul>li{
-    color: #249c9e
 }
 
 /* NAV BAR-CONTENT INTERACTION */
