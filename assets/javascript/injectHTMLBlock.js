@@ -1,4 +1,4 @@
-function loadHTMLBlock(url, callback, preprocessCallback, targetId) {
+function loadHTMLBlock(url, callback, preprocessCallback, targetId, ...preprocessArgs) {
     // Async. fetches HTML file
     var xhr = new XMLHttpRequest();
     // initialize request
@@ -8,7 +8,7 @@ function loadHTMLBlock(url, callback, preprocessCallback, targetId) {
         //preprocessing html block
         var html = xhr.responseText;
         if(preprocessCallback){
-            html = preprocessCallback(html);
+            html = preprocessCallback(html, preprocessArgs? preprocessArgs : null);
         }
         // verifying event
         if(xhr.readyState == 4 && xhr.status == 200) {
@@ -21,7 +21,9 @@ function loadHTMLBlock(url, callback, preprocessCallback, targetId) {
 
 function injectHTMLBlock(html, targetId) {
     // if target is specified
+    console.log(targetId)
     if(targetId == null) {
+        console.log(1);
         // get script tags
         var scriptTag = document.currentScript || (function() {
             var scripts = document.querySelectorAll('script');
@@ -29,8 +31,10 @@ function injectHTMLBlock(html, targetId) {
         })();
         var target = scriptTag.parentElement;
     } else {
+        console.log(2);
         // get target
         var target = document.querySelector('#targetId');
     }
+    console.log(0);
     target.innerHTML = html;
 }
