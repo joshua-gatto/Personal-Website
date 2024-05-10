@@ -23,7 +23,6 @@ function injectHTMLBlock(html, targetId) {
     // if target is specified
     console.log(targetId)
     if(targetId == null) {
-        console.log(1);
         // get script tags
         var scriptTag = document.currentScript || (function() {
             var scripts = document.querySelectorAll('script');
@@ -31,10 +30,8 @@ function injectHTMLBlock(html, targetId) {
         })();
         var target = scriptTag.parentElement;
     } else {
-        console.log(2);
         // get target
         var target = document.querySelector('#targetId');
     }
-    console.log(0);
     target.innerHTML = html;
 }
