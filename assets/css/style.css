@@ -74,15 +74,40 @@ div.navBar>a>div>p{
 /* MAIN PAGE CONTENT */
 
 div.homepageContent{
-    flex: 1 auto;
-    width: fit-content;
-    margin-left: 5px;
-    padding: 5px;
+    display: flex;
+    padding: 3vw;
 }
 
-/* NAV BAR-CONTENT INTERACTION */
-div#body{
-    display: flex;
+/* PREVIEW CARD */
+
+div.previewCard{
+    /*  make 2 columns, one for image, one for title, description and button  */
+    /*  columns should be equal in width  */
+    /*  max width at 90% page width, leave small background border  */
+}
+
+div.previewCard>img{
+    /*  make rounded edges */
+    /*  find out how to fit any image */
+    /*  give consistent size  */
+}
+
+div.previewCard>div{
+    /*  title and description justify left and button justify right  */
+    /*  title at the top, description below it.  Button at the bottom right  */
+}
+
+div.previewCard>div>h2{
+    /*  justify left  */
+    /*  bold  */
+}
+
+div.previewCard>div>p{
+    /*  justify left  */
+}
+
+div.previewCard>div>button{
+    /*  justify right  */
 }
 
 /* DOCUMENT TITLE */
