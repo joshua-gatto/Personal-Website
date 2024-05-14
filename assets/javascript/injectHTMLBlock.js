@@ -32,5 +32,5 @@ function injectHTMLBlock(html, targetId) {
         // get target
         var target = document.querySelector(`#${targetId}`);
     }
-    target.innerHTML = html;
+    target.innerHTML += html;
 }
