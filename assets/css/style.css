@@ -4,6 +4,7 @@
 /* BODY */
 body{
     margin: 0px;
+    justify-content: center;
 }
 
 /* RESUME PAGE SETUP */
@@ -81,33 +82,38 @@ div.homepageContent{
 /* PREVIEW CARD */
 
 div.previewCard{
-    /*  make 2 columns, one for image, one for title, description and button  */
-    /*  columns should be equal in width  */
-    /*  max width at 90% page width, leave small background border  */
+    display: flex;/*  make 2 columns, one for image, one for title, description and button  */
+    justify-content: space-between;/*  columns should be equal in width  */
+    max-width: 90%;/*  max width at 90% page width, leave small background border  */
+    padding: 10px;
 }
 
 div.previewCard>img{
-    /*  make rounded edges */
-    /*  find out how to fit any image */
-    /*  give consistent size  */
+    border-radius: 8px;/*  make rounded edges */
+    max-width: 30vw;/*  find out how to fit any image */
+    height: auto;/*  give consistent size  */
+/*    width: 100%;*/
 }
 
 div.previewCard>div{
-    /*  title and description justify left and button justify right  */
-    /*  title at the top, description below it.  Button at the bottom right  */
+    flex: 1;/*  title and description justify left and button justify right  */
+    margin-left: 10px;/*  title at the top, description below it.  Button at the bottom right  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 div.previewCard>div>h2{
-    /*  justify left  */
-    /*  bold  */
+    font-weight: bold;/*  justify left  */
+    margin: 0;/*  bold  */
 }
 
 div.previewCard>div>p{
-    /*  justify left  */
+    margin: 0;/*  justify left  */
 }
 
 div.previewCard>div>button{
-    /*  justify right  */
+    align-self: flex-end;/*  justify right  */
 }
 
 /* DOCUMENT TITLE */

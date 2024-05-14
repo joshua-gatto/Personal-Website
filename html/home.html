@@ -12,7 +12,7 @@
             <script src="../assets/javascript/selectCurrentPage.js"></script>
             <script src="../assets/javascript/injectFormattedElement.js"></script>
             <script>
-                injectElement("navbar", selectCurrentPage);
+                injectElement("navbar", selectCurrentPage, "navBarContainer");
             </script>
         </div>
         <div class="heading">
@@ -26,10 +26,13 @@
             </header>
         </div>
         <div id="body">
-            <script src="../assets/javascript/decoratePreviewCard.js"></script>
-            <script>
-                injectElement("previewCard", decoratePreviewCard, null, ["colour_palette.jpg", "alt", "title", "description"]);
-            </script>
+            <div id="homePageContent">
+                <script src="../assets/javascript/decoratePreviewCard.js"></script>
+                <script>
+                    injectElement("previewCard", decoratePreviewCard, "body", "colour_palette.jpg", "alt", "title", "description");
+                    injectElement("previewCard", decoratePreviewCard, "body", "colour_palette.jpg", "alt", "title", "description");
+                </script>
+            </div>
         </div>
     </body>
 </html>
