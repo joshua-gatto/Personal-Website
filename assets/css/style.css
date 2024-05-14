@@ -2,9 +2,10 @@
 @import 'variables.css';
 
 /* BODY */
-body{
+body {
     margin: 0px;
     justify-content: center;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* RESUME PAGE SETUP */
@@ -45,22 +46,26 @@ div.navBar{
     width: 100%;
     height: 5%;
     background-color: rgba(0, 0, 0, 0.6);
-    background-origin: border-box;
-    display: flex;
+	display: flex;
     justify-content: flex-end;
-    align-items: center;
+	align-items: center;
 }
 
 div.navBar>a{
-    text-decoration: none;
     width: 13%;
+    text-decoration: none;
+    align-items: center;
 }
 
 div.navBar>a>div{
     background-color: rgba(25, 25, 25, 0.9);
     color: rgba(256, 256, 255, 1.0);
-    border-radius: 10px;
+	height: 25px;
+    border-radius: 15px;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
 }
 
 div.navBar>a>div#currentPage{
@@ -82,38 +87,54 @@ div.homepageContent{
 /* PREVIEW CARD */
 
 div.previewCard{
-    display: flex;/*  make 2 columns, one for image, one for title, description and button  */
-    justify-content: space-between;/*  columns should be equal in width  */
-    max-width: 90%;/*  max width at 90% page width, leave small background border  */
+	position: relative;
+    display: flex;
+    justify-content: space-between;
+	/*background: var(--tertiary-colour);*/
+	box-shadow: 0px 4px 8px rgba(var(--surface-colour-value), 0.6);
+	border-radius: 20px;
+	margin: 15px;
     padding: 10px;
 }
 
 div.previewCard>img{
-    border-radius: 8px;/*  make rounded edges */
-    max-width: 30vw;/*  find out how to fit any image */
-    height: auto;/*  give consistent size  */
+    border-radius: 8px;
+    max-width: 20vw;
+    height: auto;
 /*    width: 100%;*/
 }
 
 div.previewCard>div{
-    flex: 1;/*  title and description justify left and button justify right  */
-    margin-left: 10px;/*  title at the top, description below it.  Button at the bottom right  */
+    flex: 1;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 div.previewCard>div>h2{
-    font-weight: bold;/*  justify left  */
-    margin: 0;/*  bold  */
+    font-weight: bold;
+    margin: 0;
 }
 
 div.previewCard>div>p{
-    margin: 0;/*  justify left  */
+    margin: 0;
 }
 
-div.previewCard>div>button{
-    align-self: flex-end;/*  justify right  */
+div.previewCard>div>input[type="button"] {
+	position: absolute; /* Position button relative to previewCard */
+    bottom: 10px; /* Distance from bottom */
+    right: 10px; /* Distance from right */
+	padding: 10px 20px; /* Adjust padding to increase button size */
+    width: auto; /* Let the width adjust based on content */
+    height: auto; /* Let the height adjust based on content */
+    align-self: flex-end;
+	display: flex;
+	border: 0;
+	text-align: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 10px;
+	background: var(--primary-colour);
 }
 
 /* DOCUMENT TITLE */
