@@ -98,10 +98,9 @@ div.previewCard{
 }
 
 div.previewCard>img{
-    border-radius: 8px;
-    max-width: 20vw;
+    border-radius: 20px;
     height: auto;
-/*    width: 100%;*/
+    width: 20vw;
 }
 
 div.previewCard>div{
@@ -138,13 +137,15 @@ div.previewCard>div>input[type="button"] {
 }
 
 /* DOCUMENT TITLE */
-div#heading>div#title>h1{
+div.heading>header>h1{
     text-align: center;
-    font-size: 28pt;
+    font-size: 30pt;
+	margin: 10px;
 }
 
-div#heading>div#title>h4{
+div.heading>header>h3{
     text-align: center;
+	margin: 10px;
 }
 
 /* CONTACT BLOCK */
@@ -167,7 +168,7 @@ div#projects>ul>li{     /* projects list in resume */
     padding-top: 10px;
 }
 
-/* PORTFOLIO DIRECTORY AND PROJECTS*/
+/* PORTFOLIO DIRECTORY */
 div#directory{
     display: grid;
     width: 100%;
@@ -177,7 +178,7 @@ div#directory>a{
     text-decoration: none;
 }
 
-div.project{
+div.projectCard{
     display: grid;
     border-style: solid;
     border-color: #249c9e;
@@ -188,7 +189,7 @@ div.project{
     
 }
 
-div.project>div{
+div.projectCard{
     display: flex;
     border-style: solid;
     border-color: #249c9e;
@@ -199,58 +200,56 @@ div.project>div{
     margin-bottom: 10px;
 }
 
-div.project>div.projectCard{
-    border-style: none;
-}
-
-div.project>div>img{
+div.projectCard>img{
+	width: 15vw;
+	height: auto;
     border-style: solid;
     border-radius: 20px;
     border-width: 1px;
     border-color: #FD5901;
 }
 
-div.project>div>img#capstoneDirectoryImage{
+div.projectCard>img#capstoneDirectoryImage{
     height: 200px;
     width: 200px;
 }
 
-div.project>div>img#monopolyDirectoryImage{
+div.projectCard>img#monopolyDirectoryImage{
     height: 120px;
     width: 200px;
 }
 
-div.project>div>img#storeDirectoryImage{
+div.projectCard>img#storeDirectoryImage{
     height: 126px;
     width: 200px;
 }
 
-div.project>div>img#greenRoofsDirectoryImage{
+div.projectCard>img#greenRoofsDirectoryImage{
     height: 123px;
     width: 200px;
 }
 
-div.project>div>div{
+div.projectCard>div{
     margin-left: 10px;
 }
 
-div.project>div>div>h2{
+div.projectCard>div>h2{
     color: #FD5901;
 }
 
-div.project>div>div>h3{
+div.projectCard>div>h3{
     color: #249c9e
 }
 
-div.project>div>div>p{
+div.projectCard>div>p{
     color: #249c9e;
 }
 
-div.project>div>div>ul>li{
+div.projectCard>div>ul>li{
     color: #FD5901;
 }
 
-div.project>div>div>img{
+div.projectCard>div>img{
     height: 100px;
     width: 200px;
 }
