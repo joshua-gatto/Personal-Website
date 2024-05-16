@@ -5,30 +5,29 @@
         <title>Joshua Gatto</title>
         <link rel="icon" href="../resources/favicon.png" type="image/icon">
         <link rel="stylesheet" href="../assets/css/style.css">
+		<!-- scripts -->
+		<script src="../assets/javascript/injectHTMLBlock.js"></script>
+		<script src="../assets/javascript/injectFormattedElement.js"></script>
+		<script src="../assets/javascript/selectCurrentPage.js"></script>
+		<script src="../assets/javascript/decorateTitleCard.js"></script>
     </head>
     <body>
         <div id=navBarContainer>
-            <script src="../assets/javascript/injectHTMLBlock.js"></script>
-            <script src="../assets/javascript/selectCurrentPage.js"></script>
-            <script src="../assets/javascript/injectFormattedElement.js"></script>
             <script>
-                injectElement("navbar", selectCurrentPage);
+                injectElement("navbar", selectCurrentPage, "#navBarContainer");
             </script>
         </div>
-        <div id="body">
-<!--             <div class="navBar">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li id="currentPage"><a href="about.html">About</a></li>
-                </ul>
-            </div> -->
+		<div class="titleCard">
+			<script>
+				injectElement("titleCard", decorateTitleCard, ".titleCard", "About Me", "a short description about me");
+			</script>
         </div>
-        <div>
-            <h1>About Me</h1>
+        <div id="body">
             <p>
-                
+                Highly skilled and versatile Software Development Engineer with a comprehensive background
+				spanning the entire software development spectrum, from low-level assembly to high-level Python. I
+				bring a wealth of experience in system design and extensive testing, having contributed over 20,000
+				lines of code as the lead or majority contributor to several development projects.
             </p>
         </div>
     </body>

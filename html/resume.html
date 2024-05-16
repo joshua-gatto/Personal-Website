@@ -5,19 +5,26 @@
         <title>Joshua Gatto</title>
         <link rel="icon" href="../resources/favicon.png" type="image/icon">
         <link rel="stylesheet" href="../assets/css/style.css">
+		<!-- scripts -->
+		<script src="../assets/javascript/injectHTMLBlock.js"></script>
+		<script src="../assets/javascript/injectFormattedElement.js"></script>
+		<script src="../assets/javascript/selectCurrentPage.js"></script>
+		<script src="../assets/javascript/decorateTitleCard.js"></script>
+		
     </head>
     <body>
-        <script src="../assets/injectHTMLBlock.js"></script>
         <div id=navBarContainer>
-            <script src="../assets/javascript/injectHTMLBlock.js"></script>
-            <script src="../assets/javascript/selectCurrentPage.js"></script>
-            <script src="../assets/javascript/injectFormattedElement.js"></script>
             <script>
-                injectElement("navbar", selectCurrentPage);
+                injectElement("navbar", selectCurrentPage, "#navBarContainer");
             </script>
         </div>
+		<div class="titleCard">
+			<script>
+				injectElement("titleCard", decorateTitleCard, ".titleCard", "Resume", "view my resume");
+			</script>
+        </div>
         <div id="body">
-            <embed src="../resources/Joshua Gatto Resume.pdf"></embed>
+            <embed src="../resources/documents/Joshua Gatto Resume.pdf"></embed>
         </div>
     </body>
 </html>

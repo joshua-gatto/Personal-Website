@@ -20,21 +20,13 @@ div#resumeDocument{
 
 /* MAIN PAGE HEADING */
 div.heading{
-    background-color: var(--surface-colour); /* replace with some image */
+    background: var(--surface-colour); /* replace with some image */
     height: 90vh;
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
     display: flex;
-}
-
-div.heading>header>h1#mainTitle{
-    color: var(--secondary-colour);
-    text-align: center;
-}
-
-div.heading>header>h3#subTitle{
-    color: var(--secondary-colour);
+	color: hsl(var(--secondary-colour-h), var(--secondary-colour-s), 50%);
     text-align: center;
 }
 
@@ -136,117 +128,57 @@ div.previewCard>div>input[type="button"] {
 	background: var(--primary-colour);
 }
 
-/* DOCUMENT TITLE */
-div.heading>header>h1{
-    text-align: center;
-    font-size: 30pt;
-	margin: 10px;
+/* RESUME PAGE */
+div#body{
+	width: 100vw;
+	height: 95vh;
 }
 
-div.heading>header>h3{
-    text-align: center;
-	margin: 10px;
-}
-
-/* CONTACT BLOCK */
-div#heading>div#contactBlock>p{
-    text-align: right;
-}
-
-/* EDUCATION AND WORK EXPERIENCE*/
-div.thridLevelSubheading>p#date{
-    text-align: right;
-    flex: auto;
-}
-
-div.thridLevelSubheading{
-    border-bottom: solid 2px;
-    display: flex;
-}
-
-div#projects>ul>li{     /* projects list in resume */
-    padding-top: 10px;
+div#body>embed{
+	width: 100%;
+	height: 100%;
 }
 
 /* PORTFOLIO DIRECTORY */
+div.titleCard{
+	background: var(--surface-colour); /* replace with some image */
+    height: 25vh;
+    /* margin-bottom: 10px; */
+    justify-content: left;
+    display: flex;
+	padding: 5vw 3vh;
+	color: hsl(var(--secondary-colour-h), var(--secondary-colour-s), 50%);
+}
+
 div#directory{
+	/* background: hsl(var(--alternate-surface-colour-h), var(--alternate-surface-colour-s), 20%); */
     display: grid;
     width: 100%;
 }
 
 div#directory>a{
+	margin: 1vh;
     text-decoration: none;
 }
 
 div.projectCard{
-    display: grid;
-    border-style: solid;
-    border-color: #249c9e;
-    padding: 20px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    box-shadow: 7px 7px rgba(0, 95, 96, 0.3);
-    
-}
-
-div.projectCard{
+	/* background: var(--tertiary-colour); */
+	border: solid 2px var(--alternate-surface-colour);
+	border-radius: 20px;
     display: flex;
-    border-style: solid;
-    border-color: #249c9e;
-    border-width: 2px;
-    border-width: 10%;
-    border-radius: 20px;
     padding: 20px;
-    margin-bottom: 10px;
 }
 
 div.projectCard>img{
-	width: 15vw;
+	width: 200px;
 	height: auto;
-    border-style: solid;
     border-radius: 20px;
-    border-width: 1px;
-    border-color: #FD5901;
-}
-
-div.projectCard>img#capstoneDirectoryImage{
-    height: 200px;
-    width: 200px;
-}
-
-div.projectCard>img#monopolyDirectoryImage{
-    height: 120px;
-    width: 200px;
-}
-
-div.projectCard>img#storeDirectoryImage{
-    height: 126px;
-    width: 200px;
-}
-
-div.projectCard>img#greenRoofsDirectoryImage{
-    height: 123px;
-    width: 200px;
+    border-width: 0;
 }
 
 div.projectCard>div{
-    margin-left: 10px;
-}
-
-div.projectCard>div>h2{
-    color: #FD5901;
-}
-
-div.projectCard>div>h3{
-    color: #249c9e
-}
-
-div.projectCard>div>p{
-    color: #249c9e;
-}
-
-div.projectCard>div>ul>li{
-    color: #FD5901;
+    margin-left: 3vw;
+	color: hsl(var(--primary-colour-h), var(--primary-colour-s), 60%);
 }
 
 div.projectCard>div>img{

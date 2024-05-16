@@ -5,37 +5,73 @@
         <title>Joshua Gatto</title>
         <link rel="icon" href="../resources/favicon.png" type="image/icon">
         <link rel="stylesheet" href="../assets/css/style.css">
+		<!-- scripts -->
+		<script src="../assets/javascript/injectHTMLBlock.js"></script>
+		<script src="../assets/javascript/selectCurrentPage.js"></script>
+		<script src="../assets/javascript/injectFormattedElement.js"></script>
+		<script src="../assets/javascript/decorateProjectCard.js"></script>
+		<script src="../assets/javascript/decorateTitleCard.js"></script>
     </head>
     <body>
 		<div id=navBarContainer>
-			<script src="../assets/javascript/injectHTMLBlock.js"></script>
-			<script src="../assets/javascript/selectCurrentPage.js"></script>
-			<script src="../assets/javascript/injectFormattedElement.js"></script>
 			<script>
-				injectElement("navbar", selectCurrentPage, "navBarContainer");
+				injectElement("navbar", selectCurrentPage, "#navBarContainer");
 			</script>
 		</div>
-		<div id="directory">
-			<script src="../assets/javascript/decorateProjectCard.js"></script>
+		<div class="titleCard">
 			<script>
-				injectElement("projectCard", decorateProjectCard, "directory", "projects/capstone", "projects/capstone/capstone_directory_image.jpg", "cone detection", "Engineering Capstone Project - Autonomous Vehicle Initiative: Obstacle Detection System", "Summary: Develop a vision system to identify obstacles on and around the road", ["Use of artificial intelligence for object detection", "Integration on professional grade hardware", "Optimization of safety and performance for a real time requirements", "Formal reports and presentations judged by a panel of impartial engineering professors"]);
+				injectElement("titleCard", decorateTitleCard, ".titleCard", "Portfolio Directory", "browse the applied projects in my portfolio");
 			</script>
-			<!-- <a href="./projects/monopoly.html"> -->
-				<!-- <div class="project"> -->
-					<!-- <div class="projectCard"> -->
-						<!-- <img id="monopolyDirectoryImage" src="../resources/projects/simplified_monopoly/images/monopoly_directory_image.jpg" alt="monopoly"> -->
-						<!-- <div class="summary"> -->
-							<!-- <h2>Simplified Monopoly</h2> -->
-							<!-- <p>Summary: Recreate a simplified version of monopoly using design patterns in Java</p> -->
-							<!-- <ul> -->
-								<!-- <li>Use and adapt design patterns to create a robust, object-oriented program</li> -->
-								<!-- <li>Collaborate with other programmers using various tools</li> -->
-								<!-- <li>Use of test-driven development to verify intended function</li>  -->
-							<!-- </ul> -->
-						<!-- </div> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </a> -->
+        </div>
+		<div id="directory">
+			<script>
+				injectElement(
+					"projectCard", 
+					decorateProjectCard, 
+					"#directory", 
+					"projects/capstone", 
+					"projects/capstone/capstone_directory_image.jpg", 
+					"cone detection", 
+					"Engineering Capstone Project - Autonomous Vehicle Initiative: Obstacle Detection System", 
+					"Summary: Develop a vision system to identify obstacles on and around the road", 
+					[
+						"Use of artificial intelligence for object detection",
+						"Integration on professional grade hardware", 
+						"Optimization of safety and performance for a real time requirements", 
+						"Formal reports and presentations judged by a panel of impartial engineering professors"
+					]
+				);
+				injectElement(
+					"projectCard",
+					decorateProjectCard,
+					"#directory",
+					"projects/green_roofs",
+					"projects/green_roofs/green_roofs_directory_image.png",
+					"green roof",
+					"Green Roofs: Report of Findings",
+					"Summary: Research and present the scientific theories behind the environemntal benefits of green roofs",
+					[
+						"Scientific research on the environmental benefits of green roofs",
+						"Final report of findings in IEEE format",
+						"Presentation of findings for the Deep Blue Cleanup organization"
+					]
+				);
+				injectElement(
+					"projectCard",
+					decorateProjectCard,
+					"#directory",
+					"projects/simplified_monopoly",
+					"projects/simplified_monopoly/images/monopoly_directory_image.jpg",
+					"Monopoly",
+					"Simplified Monopoly",
+					"Summary: Recreate a simplified version of monopoly using design patterns in Java",
+					[
+						"Use and adapt design patterns to create a robust, object-oriented program",
+						"Collaborate with other programmers using various tools",
+						"Use of test-driven development to verify intended function"
+					]
+				);
+			</script>
 			<!-- <a href="./projects/store.html"> -->
 				<!-- <div class="project"> -->
 					<!-- <div class="projectCard"> -->
@@ -47,22 +83,6 @@
 								<!-- <li>Use of object-oriented programming to develop classes that model clients and their carts, store inventory and a store manager</li> -->
 								<!-- <li>Use of Swing Development Toolkit to display a graphical user interface</li> -->
 								<!-- <li>Use of test-driven development to improve quality of code</li> -->
-							<!-- </ul> -->
-						<!-- </div> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </a> -->
-			<!-- <a href="./projects/green_roofs.html"> -->
-				<!-- <div class="project"> -->
-					<!-- <div class="projectCard"> -->
-						<!-- <img id="greenRoofsDirectoryImage" src="../resources/projects/green_roofs/green_roofs_directory_image.png" alt="green roof"> -->
-						<!-- <div class="summary"> -->
-							<!-- <h2>Green Roofs: Report of Findings</h2> -->
-							<!-- <p>Summary: Research and present the scientific theories behind the environemntal benefits of green roofs</p> -->
-							<!-- <ul> -->
-								<!-- <li>Scientific research on the environmental benefits of green roofs</li> -->
-								<!-- <li>Final report of findings in IEEE format</li> -->
-								<!-- <li>Presentation of findings for the Deep Blue Cleanup organization</li> -->
 							<!-- </ul> -->
 						<!-- </div> -->
 					<!-- </div> -->

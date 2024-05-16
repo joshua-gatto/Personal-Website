@@ -1,14 +1,48 @@
 /* Variables and Constants */
-:root{
-	--primary-colour-value: 5, 44, 224;
-	--secondary-colour-value: 7, 47, 175;
-	--tertiary-colour-value: 87, 128, 183;
-	--success-colour-value: 74, 126, 216;
-	--surface-colour-value: 7, 11, 36;
+:root {
+    --primary-colour-h: 231;
+    --primary-colour-s: 98%;
+    --primary-colour-l: 45%;
 
-	--primary-colour: rgb(var(--primary-colour-value));
-	--secondary-colour: rgb(var(--secondary-colour-value));
-	--tertiary-colour: rgb(var(--tertiary-colour-value));
-	--success-colour: rgb(var(--success-colour-value));
-	--surface-colour: rgb(var(--surface-colour-value));
+    --surface-colour-h: 231;
+    --surface-colour-s: 44%;
+    --surface-colour-l: 8%;
+
+    --secondary-colour-h: 231;
+    --secondary-colour-s: 80%;
+    --secondary-colour-l: 60%;
+
+    --tertiary-colour-h: 231;
+    --tertiary-colour-s: 70%;
+    --tertiary-colour-l: 75%;
+
+    --alternate-surface-colour-h: 231;
+    --alternate-surface-colour-s: 44%;
+    --alternate-surface-colour-l: 20%;
+
+    --success-colour-h: 120;
+    --success-colour-s: 60%;
+    --success-colour-l: 50%;
+
+    --warning-colour-h: 39;
+    --warning-colour-s: 100%;
+    --warning-colour-l: 50%;
+
+    --danger-colour-h: 0;
+    --danger-colour-s: 100%;
+    --danger-colour-l: 50%;
+
+    --info-colour-h: 197;
+    --info-colour-s: 100%;
+    --info-colour-l: 50%;
+
+    --primary-colour: hsl(var(--primary-colour-h), var(--primary-colour-s), var(--primary-colour-l));
+    --surface-colour: hsl(var(--surface-colour-h), var(--surface-colour-s), var(--surface-colour-l));
+    --secondary-colour: hsl(var(--secondary-colour-h), var(--secondary-colour-s), var(--secondary-colour-l));
+    --tertiary-colour: hsl(var(--tertiary-colour-h), var(--tertiary-colour-s), var(--tertiary-colour-l));
+    --alternate-surface-colour: hsl(var(--alternate-surface-colour-h), var(--alternate-surface-colour-s), var(--alternate-surface-colour-l));
+    --success-colour: hsl(var(--success-colour-h), var(--success-colour-s), var(--success-colour-l));
+    --warning-colour: hsl(var(--warning-colour-h), var(--warning-colour-s), var(--warning-colour-l));
+    --danger-colour: hsl(var(--danger-colour-h), var(--danger-colour-s), var(--danger-colour-l));
+    --info-colour: hsl(var(--info-colour-h), var(--info-colour-s), var(--info-colour-l));
 }
