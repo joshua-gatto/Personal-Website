@@ -3,17 +3,18 @@
     <head>
         <meta charset="utf-8"/>
         <title>Joshua Gatto</title>
-        <link rel="icon" href="../resources/favicon.png" type="image/icon">
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="icon" href="/resources/favicon.png" type="image/icon">
+        <link rel="stylesheet" href="/assets/css/style.css">
 		<!-- scripts -->
-		<script src="../assets/javascript/injectHTMLBlock.js"></script>
-		<script src="../assets/javascript/selectCurrentPage.js"></script>
-		<script src="../assets/javascript/injectFormattedElement.js"></script>
-		<script src="../assets/javascript/decorateProjectCard.js"></script>
-		<script src="../assets/javascript/decorateTitleCard.js"></script>
+		<script src="/assets/javascript/injectHTMLBlock.js"></script>
+		<script src="/assets/javascript/selectCurrentPage.js"></script>
+		<script src="/assets/javascript/injectFormattedElement.js"></script>
+		<script src="/assets/javascript/decorateProjectCard.js"></script>
+		<script src="/assets/javascript/decorateTitleCard.js"></script>
+		<script src="/assets/javascript/justifyContentRight.js"></script>
     </head>
     <body>
-		<div id=navBarContainer>
+		<div id="navBarContainer">
 			<script>
 				injectElement("navbar", selectCurrentPage, "#navBarContainer");
 			</script>
@@ -25,52 +26,12 @@
         </div>
 		<div id="directory">
 			<script>
-				injectElement(
-					"projectCard", 
-					decorateProjectCard, 
-					"#directory", 
-					"projects/capstone", 
-					"projects/capstone/capstone_directory_image.jpg", 
-					"cone detection", 
-					"Engineering Capstone Project - Autonomous Vehicle Initiative: Obstacle Detection System", 
-					"Summary: Develop a vision system to identify obstacles on and around the road", 
-					[
-						"Use of artificial intelligence for object detection",
-						"Integration on professional grade hardware", 
-						"Optimization of safety and performance for a real time requirements", 
-						"Formal reports and presentations judged by a panel of impartial engineering professors"
-					]
-				);
-				injectElement(
-					"projectCard",
-					decorateProjectCard,
-					"#directory",
-					"projects/green_roofs",
-					"projects/green_roofs/green_roofs_directory_image.png",
-					"green roof",
-					"Green Roofs: Report of Findings",
-					"Summary: Research and present the scientific theories behind the environemntal benefits of green roofs",
-					[
-						"Scientific research on the environmental benefits of green roofs",
-						"Final report of findings in IEEE format",
-						"Presentation of findings for the Deep Blue Cleanup organization"
-					]
-				);
-				injectElement(
-					"projectCard",
-					decorateProjectCard,
-					"#directory",
-					"projects/simplified_monopoly",
-					"projects/simplified_monopoly/images/monopoly_directory_image.jpg",
-					"Monopoly",
-					"Simplified Monopoly",
-					"Summary: Recreate a simplified version of monopoly using design patterns in Java",
-					[
-						"Use and adapt design patterns to create a robust, object-oriented program",
-						"Collaborate with other programmers using various tools",
-						"Use of test-driven development to verify intended function"
-					]
-				);
+			injectElement("portfolioCard", decoratePortfolioCard, "#homePageContent", "ai", "Artificial Intelligence", "Projects focused on AI development, including machine learning models, neural networks, and intelligent systems");
+				injectElement("portfolioCard", decoratePortfolioCard, "#homePageContent", "cryptography", "CyberSecurity", "Work centered around cybersecurity, encompassing encryption algorithms, secure communication, and threat analysis");
+				injectElement("portfolioCard", decoratePortfolioCard, "#homePageContent", "soft-arch", "Software Architecture", "Projects demonstrating the application of design patterns and robust software architecture principles");
+				injectElement("portfolioCard", decoratePortfolioCard, "#homePageContent", "soft-testing", "Software Verification & Validation", "Examples of projects that applied formal testing techniques to ensure software reliability and correctness");
+				injectElement("portfolioCard", decoratePortfolioCard, "#homePageContent", "embedded-prog", "Embedded Programming", "Development of projects in low-level languages, focusing on machine code, microcontrollers, and hardware interfacing");
+				injectElement("portfolioCard", decoratePortfolioCard, "#homePageContent", "dev-ops_web-design", "Web Design and Dev/Ops", "Projects that highlight web application development and the implementation of DevOps processes for continuous integration and deployment");
 			</script>
 			<!-- <a href="./projects/store.html"> -->
 				<!-- <div class="project"> -->

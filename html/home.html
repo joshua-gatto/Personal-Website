@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8"/>
         <title>Joshua Gatto</title>
-        <link rel="icon" href="../resources/favicon.png" type="image/icon">
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="icon" href="/resources/favicon.png" type="image/icon">
+        <link rel="stylesheet" href="/assets/css/style.css">
 		<!-- scripts -->
-		<script src="../assets/javascript/injectHTMLBlock.js"></script>
-		<script src="../assets/javascript/injectFormattedElement.js"></script>
-		<script src="../assets/javascript/selectCurrentPage.js"></script>
-		<script src="../assets/javascript/decoratePreviewCard.js"></script>
+		<script src="/assets/javascript/injectHTMLBlock.js"></script>
+		<script src="/assets/javascript/injectFormattedElement.js"></script>
+		<script src="/assets/javascript/selectCurrentPage.js"></script>
+		<script src="/assets/javascript/decoratePreviewCard.js"></script>
     </head>
     <body>
-        <div id=navBarContainer>
+        <div id="navBarContainer">
             <script>
                 injectElement("navbar", selectCurrentPage, "#navBarContainer");
             </script>
@@ -29,10 +29,39 @@
         </div>
         <div id="body">
             <div id="homePageContent">
-                <script src="../assets/javascript/decoratePreviewCard.js"></script>
                 <script>
-                    injectElement("previewCard", decoratePreviewCard, "#homePageContent", "colour_palette.jpg", "alt", "title", "description", "Learn More", "about");
-                    injectElement("previewCard", decoratePreviewCard, "#homePageContent", "colour_palette.jpg", "alt", "title", "description", "Learn More", "about");
+                    injectElement(
+						"previewCard", 
+						decoratePreviewCard, 
+						"#homePageContent", 
+						"portfolio", 
+						"Portfolio", 
+						"Portfolio", 
+						"view my past projects", 
+						"Learn More", 
+						"portfolio_directory"
+					);
+                    injectElement(
+						"previewCard", 
+						decoratePreviewCard, 
+						"#homePageContent", 
+						"resume", 
+						"Resume", 
+						"Resume", 
+						"view my resume", 
+						"Learn More", 
+						"resume"
+					);
+					injectElement(
+						"previewCard", 
+						decoratePreviewCard, 
+						"#homePageContent", 
+						"about-me", 
+						"About", 
+						"About", 
+						"get to know me better", 
+						"Learn More", "about"
+					);
                 </script>
             </div>
         </div>
