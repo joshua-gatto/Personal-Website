@@ -32,17 +32,6 @@ p {
 	font-size: 20pt;
 }
 
-/* RESUME PAGE SETUP */
-div#resumeDocument{
-    display: grid;
-    font-family: Arial;
-    padding: 1in;
-    font-size: 14pt;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--surface-colour);
-}
-
 /* MAIN PAGE HEADING */
 div.heading{
     background: var(--surface-colour); /* replace with some image */
@@ -55,7 +44,7 @@ div.heading{
     text-align: center;
 }
 
-/* Title Card */
+/* TITLE CARD */
 div.titleCard{
     background: var(--surface-colour); /* replace with some image */
     height: 25vh;
@@ -68,6 +57,7 @@ div.titleCard{
 /* NAV BAR */
 div.navBar{
     position: fixed;
+	z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
@@ -102,23 +92,20 @@ div.navBar>a>div#currentPage{
 
 div.navBar>a>div>p{
     text-align: center;
+	font-size: 14pt;
+	
 }
 
 /* MAIN PAGE CONTENT */
-div.homepageContent{
-    display: flex;
-    padding: 3vw;
+div#homePageContent{
+    padding: 0 3vw;
 }
 
 /* PREVIEW CARD */
 div.previewCard{
     position: relative;
     display: flex;
-    justify-content: space-between;
-    margin: 15px;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(var(--surface-colour-value), 0.6);
+    padding: 3vw;
 }
 
 div.previewCard>img{
@@ -129,7 +116,7 @@ div.previewCard>img{
 
 div.previewCard>div{
     flex: 1;
-    margin-left: 10px;
+    margin: 3vw;
     display: flex;
     flex-direction: column;
 }
@@ -145,8 +132,8 @@ div.previewCard>div>p{
 
 div.previewCard>div>input[type="button"] {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: calc(3vw + 1vw);
+    right: calc(3vw + 1vw);
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -174,6 +161,7 @@ div#body>embed{
 
 /* PORTFOLIO DIRECTORY */
 div#directory{
+	justify-content: center;
     display: grid;
     width: 100%;
 }
@@ -185,7 +173,6 @@ div#directory>a{
 
 /* PORTFOLIO CARD */
 div.portfolioCard{
-	/* maybe add border */
 	overflow-wrap: break-word;
 	width: 80vw;
 	display: flex;
@@ -201,6 +188,21 @@ div.portfolioCard>div{
 	margin: 5vw;
 	text-align: left;
     color: hsl(var(--primary-colour-h), var(--primary-colour-s), 60%);
+}
+
+div.portfolioCard>div>input[type="button"]{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 10px;
+    background: var(--primary-colour);
+    color: white;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* PROJECT CARD */
