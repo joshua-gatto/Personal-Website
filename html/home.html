@@ -14,7 +14,7 @@
     <body>
         <div id="navBarContainer">
             <script>
-                injectElement("navbar", selectCurrentPage, "#navBarContainer");
+                injectElement("navbar", "#navBarContainer", selectCurrentPage);
             </script>
         </div>
         <div class="heading">
@@ -32,8 +32,8 @@
                 <script>
                     injectElement(
 						"previewCard", 
-						decoratePreviewCard, 
 						"#homePageContent", 
+						decoratePreviewCard, 
 						"portfolio", 
 						"Portfolio", 
 						"Portfolio", 
@@ -43,8 +43,8 @@
 					);
                     injectElement(
 						"previewCard", 
-						decoratePreviewCard, 
 						"#homePageContent", 
+						decoratePreviewCard, 
 						"resume", 
 						"Resume", 
 						"Resume", 
@@ -54,8 +54,8 @@
 					);
 					injectElement(
 						"previewCard", 
-						decoratePreviewCard, 
 						"#homePageContent", 
+						decoratePreviewCard, 
 						"about-me", 
 						"About", 
 						"About", 

@@ -2,11 +2,9 @@ function decorateSubjectCard(subjectCard, ...args) {
     // Function to recursively remove tags containing null
 	args = args.flat(2);
     const removeNullTags = (html) => {
-        return html.replace(/<(\w+)[^>]*>([\s\S]*?)<\/\1>/g, (match, tag, content) => {
+        element.querySelectorAll('*').forEach(content => {
             if (content.includes('null')) {
-                return '';
-            } else {
-                return match;
+				content.remove();
             }
         });
     };
@@ -14,9 +12,9 @@ function decorateSubjectCard(subjectCard, ...args) {
     const processArgs = (html, args) => {
         args.forEach(arg => {
             if (Array.isArray(arg)) {
-                html = processArgs(html, arg);
+                processArgs(html, arg);
             } else {
-                html = html.replace(/<(\w+)><\/\1>/, `<$1>${arg}</$1>`);
+                element.querySelector(':empty').textContent = arg;
             }
         });
         return html;

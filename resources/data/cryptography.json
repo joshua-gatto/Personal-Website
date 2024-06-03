@@ -1,0 +1,20 @@
+{
+    "portfolioName": "Portfolio 1",
+    "description": "Description of Portfolio 1",
+    "projects": [
+        {
+            "title": "Capstone",
+            "description": "Description of Capstone project",
+            "link": "/html/portfolios/projects/capstone.html",
+            "image": "/images/capstone.jpg"
+        },
+        {
+            "title": "Store",
+            "description": "Description of Store project",
+            "link": "/html/portfolios/projects/store.html",
+            "image": "/images/store.jpg"
+        }
+    ],
+    "otherData": {
+    }
+}

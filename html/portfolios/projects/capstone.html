@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Joshua Gatto</title>
+        <link rel="icon" href="/resources/favicon.png" type="image/icon">
+        <link rel="stylesheet" href="/assets/css/style.css">
+		<!-- Scripts -->
+		<script src="/assets/javascript/injectHTMLBlock.js"></script>
+		<script src="/assets/javascript/injectFormattedElement.js"></script>
+		<script src="/assets/javascript/selectCurrentPage.js"></script>
+		<script src="/assets/javascript/decorateTitleCard.js"></script>
+		<script src="/assets/javascript/decorateSubjectCard.js"></script>
+    </head>
+    <body>
+        <div id="navBarContainer">
+            <script>
+                injectElement("navbar", selectCurrentPage, "#navBarContainer");
+            </script>
+        </div>
+		<div class="titleCard">
+			<script>
+				injectElement("titleCard", decorateTitleCard, ".titleCard", "Autonomous Vehicle Initiative", "Obstacle Detection System");
+			</script>
+        </div>
+		<div class="subject">
+			<script>
+				injectElement(
+					"subjectCard", 
+					decorateSubjectCard, 
+					".subject", 
+					[
+						"Description", 
+						[
+							null,
+							[
+								"The goal of the autonomous vehicle initiative was to develop a level 5 (Full Driving Automation) autonomous driving system. The project was divided into several teams, making use of the parallelized workflows in order to maintain a 7 month development cycle. Near the end of the project term, the components were be combined and integrated.<br>This project marks the first endeavor into in house development of an autonomous driving solution at Carleton University.",
+								null
+							],
+							null,
+							[
+								"The obstacle detection team's main objective was to develop a vision system for a vehicle that can identify multiple types of traffic cones, potholes, and barricades using an artificially intelligent neural network. The main components of the vision system included a high frame rate camera, a test vehicle, and an Nvidia Jetson Nano single board computer to run the neural network in real-time.",
+							null
+							]
+						]
+					]
+				);
+			</script>
+			<!-- <div class="description"> -->
+				<!-- <h2>Description</h2> -->
+				<!-- <p> -->
+					<!-- The goal of the autonomous vehicle initiative was to develop a level 5 (Full Driving Automation) autonomous driving  -->
+					<!-- system. The project was divided into several teams, making use of the parallelized workflows in order to maintain a  -->
+					<!-- 7 month development cycle. Near the end of the project term, the components were be combined and integrated.<br> -->
+					<!-- This project marks the first endeavor into in house development of an autonomous driving solution at Carleton  -->
+					<!-- University. -->
+				<!-- </p> -->
+				<!-- <p> -->
+					<!-- The obstacle detection team's main objective was to develop a vision system for a vehicle that can identify multiple  -->
+					<!-- types of traffic cones, potholes, and barricades using an artificially intelligent neural network. The main  -->
+					<!-- components of the vision system included a high frame rate camera, a test vehicle, and an Nvidia Jetson Nano single  -->
+					<!-- board computer to run the neural network in real-time. -->
+				<!-- </p> -->
+			<!-- </div> -->
+		</div>
+		<div class="subject">
+			<div class="details">
+				<h2>Details</h2>
+				<h3>Software</h3>
+				<p>
+					The obstacle detection team used a variety of tools and resources during the development of the neural network. 
+					The primary resource for dataset development was Roboflow.
+				</p>
+				<img id="roboflow_logo" src="../../resources/projects/capstone/roboflow_logo.png" alt="roboflow logo">
+				<p>
+					Roboflow is a tool that allows developers to mask images and compile datasets for training neural networks. 
+					Additionally, Roboflow provides statistical analysis on the dataset called a 'health check'.<br>
+					The obstacle detection team used Roboflow and its health check feature compile and refine the datasets.
+				</p>
+				<img id="ubuntu_logo" src="../../resources/projects/capstone/ubuntu_logo.jpg" alt="ubuntu logo">
+				<p>
+					The obstacle detection team used Ubuntu OS as the development environment as well as the deploy envirnonment. 
+					Ubuntu provides a lightweight interface with minimal memory overhead. The Linux kernel based operating system's 
+					prominent use in expermiental and cutting edge development in artificial intelligence was an advantage to the 
+					team.
+				</p> 
+				<h3>Hardware</h3>
+			</div>
+		</div>
+		<div class="subject">
+			<div class="development">
+				<h2>Development</h2>
+			</div>
+		</div>
+		<div class="subject">
+			<div class="files">
+				<h2>Project Files</h2>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+    </body>
+</html>

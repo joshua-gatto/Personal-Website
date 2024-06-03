@@ -15,12 +15,12 @@
     <body>
         <div id="navBarContainer">
             <script>
-                injectElement("navbar", selectCurrentPage, "#navBarContainer");
+                injectElement("navbar", "#navBarContainer", selectCurrentPage);
             </script>
         </div>
 		<div class="titleCard">
 			<script>
-				injectElement("titleCard", decorateTitleCard, ".titleCard", "Resume", "view my resume");
+				injectElement("titleCard", ".titleCard", decorateTitleCard, "Resume", "view my resume");
 			</script>
         </div>
         <div id="body">

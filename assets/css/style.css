@@ -52,6 +52,7 @@ div.titleCard{
     justify-content: left;
     padding: 5vw 3vh;
     color: var(--secondary-colour);
+	overflow-wrap: break-word;
 }
 
 /* NAV BAR */
@@ -98,7 +99,7 @@ div.navBar>a>div>p{
 
 /* MAIN PAGE CONTENT */
 div#homePageContent{
-    padding: 0 3vw;
+    padding: 0 12vw;
 }
 
 /* PREVIEW CARD */
@@ -106,17 +107,20 @@ div.previewCard{
     position: relative;
     display: flex;
     padding: 3vw;
+	box-shadow: 14px 10px 10px 10px var(--alternate-surface-colour);
+	border-radius: 50px;
+	border: solid var(--surface-colour);
+	margin: 8vh 0;
 }
 
 div.previewCard>img{
-    border-radius: 20px;
     height: auto;
-    width: 20vw;
+    width: 10vw;
 }
 
 div.previewCard>div{
     flex: 1;
-    margin: 3vw;
+    margin: 0 3vw;
     display: flex;
     flex-direction: column;
 }
@@ -124,16 +128,17 @@ div.previewCard>div{
 div.previewCard>div>h2{
     margin: 0;
     font-weight: bold;
+	color: var(--primary-colour);
 }
 
 div.previewCard>div>p{
-    margin: 0;
+    color: var(--primary-colour);
 }
 
 div.previewCard>div>input[type="button"] {
     position: absolute;
-    bottom: calc(3vw + 1vw);
-    right: calc(3vw + 1vw);
+    bottom: 2vw;
+    right: 4vw;
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -141,7 +146,7 @@ div.previewCard>div>input[type="button"] {
     width: auto;
     height: auto;
     border: 0;
-    border-radius: 10px;
+    border-radius: 16px;
     background: var(--primary-colour);
     color: white;
     cursor: pointer;
@@ -164,6 +169,7 @@ div#directory{
 	justify-content: center;
     display: grid;
     width: 100%;
+	margin: 5vw 0;
 }
 
 div#directory>a{
@@ -205,21 +211,28 @@ div.portfolioCard>div>input[type="button"]{
     text-align: center;
 }
 
+/* PORTFOLIO PAGE */
+div#body>a{
+	text-decoration: none;
+}
+
 /* PROJECT CARD */
 div.projectCard{
     display: flex;
-    padding: 20px;
+    padding-left: 2vw;
+	align-items: center;
+	height: fit-content;
 }
 
 div.projectCard>img{
-    width: auto;
-    height: 40vh;
+    width: 250px;
+    height: auto;
     border-radius: 20px;
     border-width: 0;
 }
 
 div.projectCard>div{
-	margin: auto;
+	margin: 2vw;
 	text-align: left;
     color: hsl(var(--primary-colour-h), var(--primary-colour-s), 60%);
 }

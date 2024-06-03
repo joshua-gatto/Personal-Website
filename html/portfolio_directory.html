@@ -6,7 +6,6 @@
         <link rel="icon" href="/resources/favicon.png" type="image/icon">
         <link rel="stylesheet" href="/assets/css/style.css">
 		<!-- scripts -->
-		<script src="/assets/javascript/injectHTMLBlock.js"></script>
 		<script src="/assets/javascript/selectCurrentPage.js"></script>
 		<script src="/assets/javascript/injectFormattedElement.js"></script>
 		<script src="/assets/javascript/decoratePortfolioCard.js"></script>
@@ -16,60 +15,61 @@
     <body>
 		<div id="navBarContainer">
 			<script>
-				injectElement("navbar", selectCurrentPage, "#navBarContainer");
+				injectElement("navbar", "#navBarContainer", selectCurrentPage);
 			</script>
 		</div>
 		<div class="titleCard">
 			<script>
-				injectElement("titleCard", decorateTitleCard, ".titleCard", "Portfolio Directory", "browse the applied projects in my portfolio");
+				injectElement("titleCard", ".titleCard", decorateTitleCard, "Portfolio Directory", "browse the applied projects in my portfolio");
 			</script>
         </div>
 		<div id="directory">
 			<script>
 				injectElement(
 					"portfolioCard", 
-					decoratePortfolioCard, 
 					"#directory", 
+					decoratePortfolioCard, 
 					"ai", 
 					"Artificial Intelligence", 
-					"Projects focused on AI development, including machine learning models, neural networks, and intelligent systems"
+					"Projects focused on AI development, including machine learning models, neural networks, and intelligent systems",
+					"ai"
 				);
 				injectElement(
 					"portfolioCard", 
-					decoratePortfolioCard, 
 					"#directory", 
+					decoratePortfolioCard, 
 					"cryptography", 
 					"CyberSecurity", 
 					"Work centered around cybersecurity, encompassing encryption algorithms, secure communication, and threat analysis"
 				);
 				injectElement(
 					"portfolioCard", 
-					decoratePortfolioCard, 
 					"#directory", 
+					decoratePortfolioCard, 
 					"soft-arch", 
 					"Software Architecture", 
 					"Projects demonstrating the application of design patterns and robust software architecture principles"
 				);
 				injectElement(
 					"portfolioCard", 
-					decoratePortfolioCard, 
 					"#directory", 
+					decoratePortfolioCard, 
 					"soft-testing", 
 					"Software Verification & Validation", 
 					"Examples of projects that applied formal testing techniques to ensure software reliability and correctness"
 				);
 				injectElement(
 					"portfolioCard", 
-					decoratePortfolioCard, 
 					"#directory", 
+					decoratePortfolioCard, 
 					"embedded-prog", 
 					"Embedded Programming", 
 					"Development of projects in low-level languages, focusing on machine code, microcontrollers, and hardware interfacing"
 				);
 				injectElement(
 					"portfolioCard", 
-					decoratePortfolioCard, 
 					"#directory", 
+					decoratePortfolioCard, 
 					"dev-ops_web-design", 
 					"Web Design and Dev/Ops", 
 					"Projects that highlight web application development and the implementation of DevOps processes for continuous integration and deployment"

@@ -1,5 +1,13 @@
 function decoratePreviewCard(previewCard, ...args){
-	var [imageResource, imageAlt, titleText, descriptionText, buttonText, buttonLink] = args.flat(2);
-	previewCard = previewCard.replace(/src="[^"]*"/, `src="/resources/images/${imageResource}_directory_image.png"`).replace(/alt="[^"]*"/, `alt="${imageAlt}"`).replace(/<h2>[^<]*<\/h2>/, `<h2>${titleText}</h2>`).replace(/<p>[^<]*<\/p>/, `<p>${descriptionText}</p>`).replace(/<input type="button"[^>]*>/, `<input type="button" value="${buttonText}" onclick="location.href='/html/${buttonLink}.html'">`);
+	const [imageResource, imageAlt, titleText, descriptionText, buttonText, buttonLink] = args.flat(2);
+	previewCard.querySelector('img').src = `/resources/images/${imageResource}_directory_image.png`;
+    previewCard.querySelector('img').alt = imageAlt;
+	previewCard.querySelector('h2').textContent = titleText;
+    previewCard.querySelector('p').textContent = descriptionText;
+	buttonElement = previewCard.querySelector('input[type="button"]');
+	buttonElement.value = buttonText;
+	buttonElement.onclick = function(){
+		location.href = `/html/${buttonLink}.html`;
+	};
 	return previewCard;
 }
