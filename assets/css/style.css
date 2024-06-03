@@ -48,6 +48,7 @@ div.heading{
 div.titleCard{
     background: var(--surface-colour); /* replace with some image */
     height: 25vh;
+	width: 100vw; /*temp fix to make entire width*/
     display: flex;
     justify-content: left;
     padding: 5vw 3vh;
@@ -214,31 +215,51 @@ div.portfolioCard>div>input[type="button"]{
 /* PORTFOLIO PAGE */
 div#body>a{
 	text-decoration: none;
+	display: inline-block;
+}
+
+div#body{
+	padding: 4vw 0;
+	display: flex;
+	justify-content: center;
+	align-items: start;
 }
 
 /* PROJECT CARD */
+
 div.projectCard{
     display: flex;
     padding-left: 2vw;
+	width: 25vw;
 	align-items: center;
 	height: fit-content;
+	border: 3px solid var(--alternate-surface-colour);
+	border-radius: 40px;
 }
 
 div.projectCard>img{
-    width: 250px;
+    width: 200px;
     height: auto;
     border-radius: 20px;
     border-width: 0;
 }
 
 div.projectCard>div{
-	margin: 2vw;
+	margin: 1vw;
 	text-align: left;
     color: hsl(var(--primary-colour-h), var(--primary-colour-s), 60%);
 }
 
-div.projectCard#right{
-	flex-direction: row-reverse;
+div.projectCard>div>h2{
+	font-size: 20px;
+}
+
+div.projectCard>div>p{
+	font-size: 15px;
+}
+
+div.projectCard>div>ul>li{
+	font-size: 15px;
 }
 
 /* SUBJECT CARD */
