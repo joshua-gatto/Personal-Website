@@ -1,0 +1,15 @@
+@import 'style.css';
+
+/* RESUME PAGE */
+div#body{
+    width: 100%;
+    height: 95vh;
+	display: flex; /* Ensures child elements take full height */
+    justify-content: center; /* Center child elements */
+    align-items: center; /* Center child elements */
+}
+
+div#body>embed{
+    width: 100%;
+    height: 100%;
+}

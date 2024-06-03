@@ -1,0 +1,69 @@
+@import 'style.css';
+
+/* MAIN PAGE HEADING */
+div.heading{
+    background: var(--surface-colour); /* replace with some image */
+    height: 90vh;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--secondary-colour);
+    text-align: center;
+}
+
+/* MAIN PAGE CONTENT */
+div#homePageContent{
+    padding: 0 12vw;
+}
+
+/* PREVIEW CARD */
+div.previewCard{
+    position: relative;
+    display: flex;
+    padding: 3vw;
+	box-shadow: 14px 10px 10px 10px var(--alternate-surface-colour);
+	border-radius: 50px;
+	border: solid var(--surface-colour);
+	margin: 8vh 0;
+}
+
+div.previewCard>img{
+    height: auto;
+    width: 10vw;
+}
+
+div.previewCard>div{
+    flex: 1;
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+div.previewCard>div>h2{
+    margin: 0;
+    font-weight: bold;
+	color: var(--primary-colour);
+}
+
+div.previewCard>div>p{
+    color: var(--primary-colour);
+}
+
+div.previewCard>div>input[type="button"] {
+    position: absolute;
+    bottom: 2vw;
+    right: 4vw;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 16px;
+    background: var(--primary-colour);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}

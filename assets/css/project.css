@@ -1,0 +1,12 @@
+@import 'style.css';
+
+/* SUBJECT CARD */
+div.subject>div.details>img#ubuntu_logo{
+    width: 50%;
+    height: auto;
+}
+
+div.subject>div.details>img#roboflow_logo{
+    width: 50%;
+    height: auto;
+}

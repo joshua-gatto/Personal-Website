@@ -16,6 +16,6 @@ function decoratePortfolioCard(portfolioCard, ...args){
 
 function redirectUser(portfolio){
 	const encodedPortfolio = encodeURIComponent(portfolio);
-	const url = `/html/portfolios/portfolio.html?portfolio=${encodedPortfolio}`;
+	const url = `/html/portfolio.html?portfolio=${encodedPortfolio}`;
 	window.location.href = url;
 }

@@ -1,0 +1,51 @@
+@import 'style.css';
+
+/* PORTFOLIO PAGE */
+div#body>a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+div#body{
+	padding: 3vw 0;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+
+/* PROJECT CARD */
+
+div.projectCard{
+    display: flex;
+    padding-left: 2vw;
+	width: 25vw;
+	align-items: center;
+	height: fit-content;
+	border: 3px solid var(--alternate-surface-colour);
+	border-radius: 40px;
+}
+
+div.projectCard>img{
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    border-width: 0;
+}
+
+div.projectCard>div{
+	margin: 1vw;
+	text-align: left;
+    color: hsl(var(--primary-colour-h), var(--primary-colour-s), 60%);
+}
+
+div.projectCard>div>h2{
+	font-size: 20px;
+}
+
+div.projectCard>div>p{
+	font-size: 15px;
+}
+
+div.projectCard>div>ul>li{
+	font-size: 15px;
+}

@@ -1,5 +1,5 @@
 function getPortfolioProjects(portfolio){
-	const portfolioDirectory = `http://localhost:8000/resources/data/${portfolio}.json`;
+	const portfolioDirectory = `http://localhost:8000/resources/data/portfolios/${portfolio}.json`;
 	return fetch(portfolioDirectory)
 		.then(response => response.json())
 		.then(data => {

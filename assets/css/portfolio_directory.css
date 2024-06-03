@@ -1,0 +1,48 @@
+@import 'style.css';
+
+/* PORTFOLIO DIRECTORY */
+div#directory{
+	justify-content: center;
+    display: grid;
+    width: 100%;
+	margin: 5vw 0;
+}
+
+div#directory>a{
+	margin: 10vh;
+    text-decoration: none;
+}
+
+/* PORTFOLIO CARD */
+div.portfolioCard{
+	overflow-wrap: break-word;
+	width: 80vw;
+	display: flex;
+	align-items: center;
+}
+
+div.portfolioCard>img{
+	width: auto;
+	height: 20vh;
+}
+
+div.portfolioCard>div{
+	margin: 5vw;
+	text-align: left;
+    color: hsl(var(--primary-colour-h), var(--primary-colour-s), 60%);
+}
+
+div.portfolioCard>div>input[type="button"]{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 10px;
+    background: var(--primary-colour);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
