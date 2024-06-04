@@ -4,6 +4,7 @@ function decoratePortfolioBody(portfolio){
 			"projectCard", 
 			"#body", 
 			decorateProjectCard, 
+			portfolio.portfolioClass,
 			project.projectName, 
 			project.imageResource, 
 			project.imgAlt, 

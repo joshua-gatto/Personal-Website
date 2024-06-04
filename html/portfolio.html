@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="/assets/css/portfolio.css">
 		<!-- scripts -->
 		<script src="/assets/js/injectElement.js"></script>
-		<script src="/assets/js/getPortfolioDirectory.js"></script>
+		<script src="/assets/js/getPortfolio.js"></script>
 		<script src="/assets/js/getURLParameter.js"></script>
 		<script src="/assets/js/decorate/selectCurrentPage.js"></script>
 		<script src="/assets/js/decorate/decorateTitleCard.js"></script>
@@ -23,8 +23,8 @@
         </div>
 		<div class="titleCard">
 			<script>
-				const portfolioName = getQueryParameter('portfolio');
-				getPortfolioProjects(portfolioName)
+				const portfolioClass = getQueryParameter('portfolio');
+				getPortfolio(portfolioClass)
 					.then(portfolio => {
 						injectElement("titleCard", ".titleCard", decorateTitleCard, portfolio.portfolioName, portfolio.description);
 				})
@@ -35,7 +35,7 @@
         </div>
 		<div id="body">
 			<script>
-				getPortfolioProjects(portfolioName)
+				getPortfolio(portfolioClass)
 					.then(portfolio => {
 						decoratePortfolioBody(portfolio);
 				})
