@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Joshua Gatto</title>
+        <link rel="icon" href="/resources/images/favicon.png" type="image/icon">
+        <link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="stylesheet" href="/assets/css/project.css">
+		<!-- scripts -->
+		<script src="/assets/js/injectElement.js"></script>
+		<script src="/assets/js/getURLParameter.js"></script>
+		<script src="/assets/js/getPortfolio.js"></script>
+		<!-- decorate scripts -->
+		<script src="/assets/js/decorate/selectCurrentPage.js"></script>
+		<script src="/assets/js/decorate/decorateTitleCard.js"></script>
+		<script src="/assets/js/decorate/decorateProjectBody.js"></script>
+		<script src="/assets/js/decorate/decorateSubjectCard.js"></script>
+    </head>
+    <body>
+        <div id="navBarContainer">
+            <script>
+                injectElement("navbar", "#navBarContainer", null);
+            </script>
+        </div>
+		<div class="titleCard">
+			<script>
+				const data = JSON.parse(getQueryParameter('data'));
+				const portfolioClass = data.portfolio;
+				const projectName = data.project;
+				getPortfolio(portfolioClass)
+					.then(portfolio => {
+						const project = portfolio.projects.find(project => project.projectName === projectName);
+						injectElement("titleCard", ".titleCard", decorateTitleCard, project.titleText, project.descriptionText);
+				})
+					.catch(error => {
+						console.log("Error fetching portfolio projects", error);
+				});
+			</script>
+        </div>
+        <div id="body">
+			<script>
+				getPortfolio(portfolioClass)
+					.then(portfolio => {
+						const project = portfolio.projects.find(project => project.projectName === projectName);
+						decorateProjectBody(project);
+				})
+					.catch(error => {
+						console.log("Error fetching project", error);
+				});
+			</script>
+        </div>
+    </body>
+</html>

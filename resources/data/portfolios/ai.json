@@ -1,19 +1,57 @@
 {
-	"portfolioClass": "ai",
-	"portfolioName": "Artificial Intelligence",
-	"description": "Projects focused on AI development, including machine learning models, neural networks, and intelligent systems",
-	"projects": [
-		{
-			"projectName": "Capstone",
-			"imageResource": "capstone_directory_image.jpg",
-			"imgAlt": "cones being detected",
-			"titleText": "Autonomous Vehcile Initiative - Obstacle Detection System",
-			"descriptionText": "Carleton University's first level 5 autonomous vehicle system, featuring an AI-driven obstacle detection using cutting-edge technology.",
-			"listItems": [
-				"a",
-				"b",
-				"c"
-			]
-		}
-	]
+    "portfolioClass": "ai",
+    "portfolioName": "Artificial Intelligence",
+    "description": "Projects focused on AI development, including machine learning models, neural networks, and intelligent systems",
+    "projects": [
+        {
+            "projectName": "Capstone",
+            "imageResource": "capstone_directory_image.jpg",
+            "imgAlt": "cones being detected",
+            "titleText": "Autonomous Vehicle Initiative - Obstacle Detection System",
+            "descriptionText": "Carleton University's first level 5 autonomous vehicle system, featuring an AI-driven obstacle detection using cutting-edge technology.",
+            "listItems": [
+                "a",
+                "b",
+                "c"
+            ],
+            "subjects": [
+                {
+                    "tag": "h2",
+                    "text": "details"
+                },
+                {
+                    "tag": "h3",
+                    "text": "software"
+                },
+                {
+                    "tag": "p",
+                    "text": "The obstacle detection team used a variety of tools and resources during the development of the neural network. The primary resource for dataset development was Roboflow."
+                },
+                {
+                    "tag": "img",
+                    "src": "http://localhost:8000/resources/images/capstone/roboflow_logo.png"
+                },
+                {
+                    "tag": "h3",
+                    "text": "hardware"
+                },
+                {
+                    "tag": "h3",
+                    "text": "development"
+                },
+                {
+                    "tag": "p",
+                    "text": "lorem ipsum"
+                },
+                {
+                    "tag": "h2",
+                    "text": "project files"
+                },
+                {
+                    "tag": "p",
+                    "text": "lorem ipsum"
+                }
+            ]
+        }
+    ]
 }

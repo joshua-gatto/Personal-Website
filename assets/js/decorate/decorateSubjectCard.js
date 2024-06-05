@@ -1,26 +1,23 @@
 function decorateSubjectCard(subjectCard, ...args) {
-    // Function to recursively remove tags containing null
-	args = args.flat(2);
-    const removeNullTags = (html) => {
-        element.querySelectorAll('*').forEach(content => {
-            if (content.includes('null')) {
-				content.remove();
-            }
-        });
-    };
-    // Recursively process arguments
-    const processArgs = (html, args) => {
-        args.forEach(arg => {
-            if (Array.isArray(arg)) {
-                processArgs(html, arg);
-            } else {
-                element.querySelector(':empty').textContent = arg;
-            }
-        });
-        return html;
-    };
-    // Process arguments and remove tags containing null
-    subjectCard = processArgs(subjectCard, args);
-    subjectCard = removeNullTags(subjectCard);
+    const subject = args.flat()[0];
+    const contentElement = buildContent(subject);
+    subjectCard.appendChild(contentElement);
     return subjectCard;
+}
+
+function buildContent(element) {
+    try {
+        const createdElement = document.createElement(element.tag);
+        Object.entries(element).forEach(([key, value]) => {
+            if (key !== "tag" && key !== "text") {
+                createdElement.setAttribute(key, value);
+            } else if (key === "text") {
+                createdElement.textContent = value;
+            }
+        });
+        return createdElement;
+    } catch (error) {
+        console.log("Error compiling subjectCard content ", error);
+        return null;
+    }
 }
