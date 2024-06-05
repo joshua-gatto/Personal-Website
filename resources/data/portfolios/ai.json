@@ -16,40 +16,25 @@
             ],
             "subjects": [
                 {
-                    "tag": "h2",
-                    "text": "details"
+                    "h2": "details",
+                    "content": [
+                        { "tag": "h3", "text": "software" },
+                        { "tag": "p", "text": "The obstacle detection team used a variety of tools and resources during the development of the neural network. The primary resource for dataset development was Roboflow." },
+                        { "tag": "img", "src": "http://localhost:8000/resources/images/capstone/roboflow_logo.png" },
+                        { "tag": "h3", "text": "hardware" }
+                    ]
                 },
                 {
-                    "tag": "h3",
-                    "text": "software"
+                    "h2": "development",
+                    "content": [
+                        { "tag": "p", "text": "lorem ipsum" }
+                    ]
                 },
                 {
-                    "tag": "p",
-                    "text": "The obstacle detection team used a variety of tools and resources during the development of the neural network. The primary resource for dataset development was Roboflow."
-                },
-                {
-                    "tag": "img",
-                    "src": "http://localhost:8000/resources/images/capstone/roboflow_logo.png"
-                },
-                {
-                    "tag": "h3",
-                    "text": "hardware"
-                },
-                {
-                    "tag": "h3",
-                    "text": "development"
-                },
-                {
-                    "tag": "p",
-                    "text": "lorem ipsum"
-                },
-                {
-                    "tag": "h2",
-                    "text": "project files"
-                },
-                {
-                    "tag": "p",
-                    "text": "lorem ipsum"
+                    "h2": "project files",
+                    "content": [
+                        { "tag": "p", "text": "lorem ipsum" }
+                    ]
                 }
             ]
         }
