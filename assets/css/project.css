@@ -1,12 +1,33 @@
 @import 'style.css';
 
 /* SUBJECT CARD */
-div.subject>div.details>img#ubuntu_logo{
-    width: 50%;
-    height: auto;
+div.subjectCard{
+	padding: 0 17vw;
+	color: var(--surface-colour);
+	/* display: flex; */
 }
 
-div.subject>div.details>img#roboflow_logo{
+div.subjectCard>h2{
+	font-size: 24pt;
+	margin-bottom: 16px;
+}
+
+div.subjectCard>h3{
+	font-size: 18pt;
+	margin-bottom: 16px;
+}
+
+div.subjectCard>h4{
+	font-size: 16pt;
+	margin-bottom: 16px;
+}
+
+div.subjectCard>p{
+	margin: 0;
+	font-size: 12pt;
+}
+
+div.subjectCard>img{
     width: 50%;
     height: auto;
 }
