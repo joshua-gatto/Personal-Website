@@ -2,7 +2,7 @@ function decorateSubjectCard(subjectCard, ...args) {
     const subject = args.flat()[0];
 	const h2 = subjectCard.querySelector("h2");
 	h2.textContent = subject.h2;
-	console.log(subject.content);
+	h2.id= subject.h2.replace(/\s+/g, '-').toLowerCase();;
     const contentElement = buildContent(subject.content);
     subjectCard.appendChild(contentElement);
     return subjectCard;
