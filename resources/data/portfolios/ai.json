@@ -8,30 +8,53 @@
             "imageResource": "capstone_directory_image.jpg",
             "imgAlt": "cones being detected",
             "titleText": "Autonomous Vehicle Initiative - Obstacle Detection System",
-            "descriptionText": "Carleton University's first level 5 autonomous vehicle system, featuring an AI-driven obstacle detection using cutting-edge technology.",
+            "descriptionText": "Carleton University's First Level 5 Autonomous Vehicle System",
             "listItems": [
                 "a",
                 "b",
                 "c"
             ],
             "subjects": [
-                {
-                    "h2": "details",
+              {
+                    "h2": "Development",
                     "content": [
-                        { "tag": "h3", "text": "software" },
-                        { "tag": "p", "text": "The obstacle detection team used a variety of tools and resources during the development of the neural network. The primary resource for dataset development was Roboflow." },
+						{ "tag": "h3", "text": "Project Overview" },
+						{ "tag": "p", "text": "The goal of the Autonomous Vehicle Initiative is to develop a Level 5 (Full Driving Automation) autonomous driving system. This project is divided into multiple teams, utilizing parallelized workflows to adhere to a 7-month development cycle. As the project nears completion, the components are combined and integrated, marking Carleton University's first in-house effort to develop an autonomous driving solution. The obstacle detection team focuses on creating a vision system that enables the vehicle to identify various obstacles, such as traffic cones, potholes, and barricades, using an artificial neural network. Key components of this system include a high-frame-rate camera, a test vehicle, and an Nvidia Jetson Nano single-board computer to run the neural network in real time." },
+						{ "tag": "p", "text": "The autonomous vehicle obstacle detection system integrates with a central control unit to facilitate real-time object detection and response. The system’s core functionality includes detecting and classifying road obstacles, which is essential for autonomous driving. The system employs advanced object detection algorithms, and initial models exhibit inaccuracies, leading to the acquisition of additional data and refinement of detection capabilities. The project involves developing multiple models to recognize specific objects such as potholes, cones, barricades, and road signs." },
+						{ "tag": "h3", "text": "Development Process" },
+						{ "tag": "p", "text": "The development process begins with dataset collection and preparation. The team gathers images and videos from sources like dashcam footage and user-uploaded content on platforms like Roboflow. These datasets are critical for training the object detection models, primarily based on the YOLO (You Only Look Once) architecture. Models undergo iterative improvements to enhance performance." },
+						{ "tag": "p", "text": "Challenges include improving model accuracy through data augmentation and refinement techniques, such as combining black-and-white and colored images. Despite these efforts, pothole detection accuracy remains suboptimal due to the irregular and varied nature of potholes." },
+						{ "tag": "p", "text": "Integrating multiple models into a cohesive system presents another challenge. Initial attempts using shell code and sequential input feeding are impractical due to computational constraints. The solution involves merging datasets from individual models and retraining a combined model, which slightly decreases object detection confidence but significantly improves frame rate and meets performance criteria." },
+						{ "tag": "h3", "text": "Results and Conclusion" },
+						{ "tag": "p", "text": "The final obstacle detection system successfully identifies potholes, cones, barricades, traffic lights, and other road signs in real time. While performance is satisfactory, there is room for improvement, particularly in pothole detection. The models demonstrate the ability to detect various obstacles but face limitations in certain conditions due to dataset and model constraints." },
+						{ "tag": "p", "text": "Reflecting on the project, the team acknowledges the challenges faced and the lessons learned. Despite the limitations and scope reduction, the project delivers a functional obstacle detection system ready for further refinement and integration into autonomous vehicles. The experience underscores the importance of iterative testing and data quality in developing robust autonomous driving technologies. The project serves as a foundation for future advancements in the field, aiming to enhance the safety and reliability of autonomous vehicle systems." }
+                    ]
+                },
+                {
+                    "h2": "Project Elements",
+                    "content": [
+                        { "tag": "h3", "text": "Software" },
+                        { "tag": "p", "text": "The obstacle detection team employs a range of tools throughout the neural network development process, with Roboflow serving as the primary resource for dataset development." },
+						{ "tag": "h4", "text": "Roboflow" },
                         { "tag": "img", "src": "http://localhost:8000/resources/images/capstone/roboflow_logo.png" },
-                        { "tag": "h3", "text": "hardware" }
+						{ "tag": "p", "text": "Roboflow is an essential tool for developing computer vision models, particularly for creating and refining image datasets to train neural networks. It allows for image masking, dataset compilation, and comprehensive dataset analysis. In this project, Roboflow’s advanced capabilities in data augmentation and real-time feedback are crucial for building accurate models. By generating high-quality datasets and assessing their effectiveness, Roboflow significantly contributes to the project’s success in identifying and marking road obstacles such as traffic cones, potholes, and barricades." },
+						{ "tag": "h4", "text": "Ubuntu" },
+						{ "tag": "img", "src": "http://localhost:8000/resources/images/capstone/ubuntu_logo.jpg" },
+						{ "tag": "p", "text": "Ubuntu, a Linux-based operating system, is selected as the development and deployment environment. Although the specific choice of Linux distribution is not critical as long as a lightweight OS is used, Ubuntu is chosen due to its stability, extensive community support, and compatibility with various software libraries. This marginally optimal choice ensures efficient management of resources and supports AI development tools. Ubuntu’s prominence in AI research and development provides easy access to necessary open-source tools, facilitating the rapid development and testing of the obstacle detection system." },
+						{ "tag": "h4", "text": "Jupyter Notebooks" },
+						{ "tag": "img", "src": "http://localhost:8000/resources/images/capstone/jupyter_logo.png" },
+						{ "tag": "p", "text": " Jupyter Notebooks offer an interactive environment for training models by enabling the team to write and execute code, visualize data, and document their development process. The team uses Jupyter Notebooks to experiment with different model architectures, hyperparameters, and training strategies. This setup allows for iterative refinement and debugging. Once local hardware is acquired, the team transitions the training process to this infrastructure, benefiting from enhanced computational power and faster model training, which improves performance and scalability." },
+                        { "tag": "h3", "text": "Hardware" },
+						{ "tag": "h4", "text": "Graphics Card" },
+						{ "tag": "img", "src": "http://localhost:8000/resources/images/capstone/evga_rtx_3080_ti.png" },
+						{ "tag": "p", "text": "The RTX 3080ti is a high-performance graphics card designed for demanding tasks such as real-time rendering and AI model training. In this project, it accelerates the training and inference of neural network models. Its powerful GPU cores handle large datasets and complex computations, significantly reducing model training time. This graphics card is selected based on availability from the school, making it a practical choice. Despite this limitation, the RTX 3080ti’s advanced architecture contributes to higher accuracy in real-time object detection, which is crucial for identifying and responding to obstacles effectively." },
+						{ "tag": "h4", "text": "Single Board Computer (SBC)" },
+						{ "tag": "img", "src": "http://localhost:8000/resources/images/capstone/nvidia_jetson_nano.png" },
+						{ "tag": "p", "text": "The Nvidia Jetson Nano is a compact single-board computer tailored for AI and machine learning applications. Its specialization in AI computing, combined with its impressive specifications and form factor, makes it ideal for the final implementation of the obstacle detection system. Alongside other groups within the Autonomous Vehicle Initiative (AVI), the team determines that the Jetson Nano meets the real-time requirements, including response times and computational capacity. This board processes data from the high-frame-rate camera and executes object detection algorithms in real time, ensuring effective operation in a real-world environment." }
                     ]
                 },
                 {
-                    "h2": "development",
-                    "content": [
-                        { "tag": "p", "text": "lorem ipsum" }
-                    ]
-                },
-                {
-                    "h2": "project files",
+                    "h2": "Project Files",
                     "content": [
                         { "tag": "p", "text": "lorem ipsum" }
                     ]
