@@ -15,6 +15,7 @@
 		<script src="/assets/js/decorate/decorateTitleCard.js"></script>
 		<script src="/assets/js/decorate/decorateProjectBody.js"></script>
 		<script src="/assets/js/decorate/decorateSubjectCard.js"></script>
+		<script src="/assets/js/decorate/decorateSideBar.js"></script>
     </head>
     <body>
         <div id="navBarContainer">
@@ -38,11 +39,23 @@
 			</script>
         </div>
         <div id="body">
+			<div id="mainContent">
+				<script>
+					getPortfolio(portfolioClass)
+						.then(portfolio => {
+							const project = portfolio.projects.find(project => project.projectName === projectName);
+							decorateProjectBody(project);
+					})
+						.catch(error => {
+							console.log("Error fetching project", error);
+					});
+				</script>
+			</div>
 			<script>
 				getPortfolio(portfolioClass)
 					.then(portfolio => {
 						const project = portfolio.projects.find(project => project.projectName === projectName);
-						decorateProjectBody(project);
+						injectElement("sideBar", "div#body", decorateSideBar, project.subjects);
 				})
 					.catch(error => {
 						console.log("Error fetching project", error);

@@ -1,10 +1,16 @@
 @import 'style.css';
 
+/* PAGE SPECIFIC BEHAVIOUR */
+div#body {
+	display: grid;
+	grid-template-columns: 24fr 7fr;
+}
+
 /* SUBJECT CARD */
 div.subjectCard{
-	padding: 0 17vw;
 	color: var(--surface-colour);
-	/* display: flex; */
+	display: grid;
+	margin: 2em 5em;
 }
 
 div.subjectCard>h2{
@@ -28,6 +34,16 @@ div.subjectCard>p{
 }
 
 div.subjectCard>img{
-    width: 50%;
+    width: auto;
     height: auto;
+	justify-self: center;
+	max-height: 40vh;
+	padding: 3vh 0;
+}
+
+/* SIDE BAR */
+
+div#sideBarContainer{
+	background: var(--secondary-colour);
+	padding: 1em;
 }

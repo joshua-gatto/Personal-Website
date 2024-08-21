@@ -45,7 +45,7 @@ div.titleCard{
 
 /* TITLE TEXT */
 div.titleCard>header{
-	padding: 0 20vw 10vh 10vw
+	padding: 0 10em 5em 5em;
 }
 
 /* NAV BAR */
@@ -80,7 +80,7 @@ div.navBar>a>div{
 }
 
 div.navBar>a>div:hover{
-	background-color: var(--secondary-colour);
+	background-color: var(--secondary-colour); /* example colour */
 }
 
 div.navBar>a>div#currentPage{
